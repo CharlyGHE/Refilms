@@ -1,47 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-body {
-  background: #051215
-}
-
 img {
   height: 150px;
 }
 
-footer ul {
-  margin: 10px;
-}
-
-.footer-bottom {
-  padding: 15px;
-}
-
-/*main*/
-.h2a {
+h2 {
   font-size: 25PX;
   font-weight: bolder;
   text-align: center;
   color: #fff;
-  background-color: #051215;
+  background-color:  #051215;
 }
 
 /*GALERIA*/
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container1 {
   height: 100vh;
   display: flex;
@@ -67,8 +36,7 @@ footer ul {
   transition: all 400ms;
   cursor: pointer;
 }
-
-.card>img {
+.card > img {
   display: block;
   max-width: 100%;
   height: 100%;
@@ -78,7 +46,6 @@ footer ul {
 .card:nth-child(odd) {
   translate: 0 -20px;
 }
-
 .card:nth-child(even) {
   translate: 0 20px;
 }
@@ -86,32 +53,12 @@ footer ul {
 .container:hover .card:not(:hover) {
   filter: grayscale(100%);
 }
-
 .card:hover {
   flex: 3;
 }
 
-/*texto del comienzo*/
-.texto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-  color: #fff;
-  background-color: #051215;
-  gap: 10px;
-}
-
-.texto1 {
-  padding-left: 14px;
-  display: flex;
-  color: #fff;
-  background-color: #051215;
-}
-
 /*carrusel*/
-.container2 {
+.container2{
   background: #051215;
   display: flex;
   justify-content: center;
