@@ -23,6 +23,11 @@
     margin: 5px auto;
 }
 
+.img-wtw {
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
 /* crew */
 .menu-container {
     width: 100%;
