@@ -146,6 +146,15 @@ footer ul a {
     clip-rule: evenodd
 }
 
+#logo2 {
+    fill: #00fff2;
+    shape-rendering: geometricPrecision;
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+    fill-rule: evenodd;
+    clip-rule: evenodd
+}
+
 .svg {
     fill: #00fff2;
     shape-rendering: geometricPrecision;
@@ -278,6 +287,10 @@ nav a {
     }
 
     #logo {
+        display: none;
+    }
+
+    #logo2 {
         height: 40px;
     }
 
@@ -292,7 +305,7 @@ nav a {
 }
 
 /* Media querie tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     header {
         height: 50px;
 
@@ -360,6 +373,10 @@ nav a {
     }
 
     #logo {
+        display: none;
+    }
+
+    #logo2 {
         height: 40px;
     }
 }
@@ -372,5 +389,9 @@ nav a {
 
     #logo {
         height: 50px;
+    }
+
+    #logo2 {
+        display: none;
     }
 }
