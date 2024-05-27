@@ -218,6 +218,8 @@ nav a {
     header {
         height: 50px;
 
+        z-index: 1000;
+
         nav {
 
             label {
@@ -276,6 +278,29 @@ nav a {
             display: block;
         }
     }
+
+    .h2r {
+        display: none;
+    }
+
+    .container {
+        display: none !important;
+    }
+
+    .videos {
+        width: 300px !important;
+        padding: 5px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    .center {
+        margin: 0 auto;
+        width: 80%;
+    }
+
 
     .center {
         margin: 0 auto;
@@ -309,6 +334,8 @@ nav a {
     header {
         height: 50px;
 
+        z-index: 1000;
+
         nav {
 
             label {
@@ -367,7 +394,7 @@ nav a {
             display: block;
         }
     }
-    
+
     .svg {
         width: 100px;
     }
