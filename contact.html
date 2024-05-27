@@ -113,27 +113,34 @@
           <div id="colform">
             <div class="form-col50">
               <input type="text" placeholder="Nombre" id="name" name="name" required>
+              <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-col50">
               <input type="text" placeholder="Apellido" id="surname" name="surname" required>
+              <span class="error-message" id="surnameError"></span>
             </div>
           </div>
           <div>
             <input type="email" placeholder="Correo Electrónico" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
           </div>
           <div>
             <select name="subject" id="subject" required>
               <option value="">Seleccione su asunto...</option>
-              <option value="">1</option>
-              <option value="">2</option>
+              <option value="sugerencias">Sugerencias</option>
+              <option value="bugs">Bugs</option>
+              <option value="varios">Varios</option>
             </select>
+            <span class="error-message" id="subjectError"></span>
           </div>
           <div>
             <textarea name="message" id="message" placeholder="Comentarios" required></textarea>
+            <span class="error-message" id="messageError"></span>
           </div>
           <div class="flex al-center" id="terminos">
             <label for="terms">Acepto los términos y condiciones</label>
             <input type="checkbox" id="terms" name="terms" required>
+            <span class="error-message" id="termsError"></span>
           </div>
           <div class="flex j-center">
             <button type="submit">Enviar</button>
@@ -197,6 +204,7 @@
       <p>&copy; 2024 Resúmenes de Películas. Todos los derechos reservados.</p>
     </div>
   </footer>
+  <script src="js/formValidation.js"></script>
 </body>
 
 </html>
