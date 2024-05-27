@@ -78,11 +78,32 @@ input[type="radio"] {
 }
 
 /* Media querie celular */
-@media (min-width: 320px) and (max-width: 760px) {}
+@media (min-width: 320px) and (max-width: 760px) {
+    #info {
+        display: none;
+    }
+    .content {
+        max-width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* Media querie tablet */
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #info {
+        max-width: 150px;
+        margin-right: 0px;
+    }    
+}
 
 /* Media querie laptop */
 
