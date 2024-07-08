@@ -8,8 +8,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="resources/css/styles.css">
-    <link rel="stylesheet" href="resources/css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <title>Resefimls</title>
 </head>
@@ -63,8 +63,28 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="js/sweetAlert.js"></script>
+        <script>
+            //logeo incorrecto
+            Swal.fire({
+                alert: true,
+                alertTitle: "Error",
+                alertMessage: "Los datos ingresados no son correctos",
+                alertIcon: "error",
+                showConfirmButton: true,
+                timer: false,
+            })
 
+            //logeo correcto
+            Swal.fire({
+                alert: true,
+                alertTitle: "Login",
+                alertMessage: "Inicio de sesion correcto",
+                alertIcon: 'success',
+                showConfirmButton: false,
+                timer: 1500,
+                ruta: ' '
+            })
+        </script>
     </main>
     <footer>
         <div class="center">
