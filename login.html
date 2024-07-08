@@ -44,7 +44,7 @@
                 <li>
                     <a href="index.html" class="btn-shine"><span>Inicio</span></a>
                 </li>
-                <li><a href="/profile" class="btn-shine"><span>Perfil</span></a></li>
+                <li><a href="profile.html" class="btn-shine"><span>Perfil</span></a></li>
                 <li>
                     <a href="news.html" class="btn-shine"><span>noticias</span></a>
                 </li>
@@ -63,20 +63,8 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script ></script>
 
-        <% if(typeof alert !="undefined" ) { %>
-            <script>
-                Swal.fire({
-                    title: '<%= alertTitle %>',
-                    text: '<%= alertMessage %>',
-                    icon: '<%= alertIcon %>',
-                    showConfirmButton: <%= showConfirmButton %> ,
-                    timer: <%= timer %>
-        }).then(() => {
-                        window.location = '/<%= ruta %>'
-                    })
-            </script>
-            <% } %>
     </main>
     <footer>
         <div class="center">
