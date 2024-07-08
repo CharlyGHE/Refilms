@@ -1,0 +1,65 @@
+h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 70px 0 10px 0;
+}
+
+label {
+    margin-right: auto;
+}
+
+.reg-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.reg-form input[type="password"],
+.reg-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-save {
+    text-align: center;
+    width: 50%;
+    padding: 15px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.btn-save:hover, .btn-save:active {
+    color: #fff;
+    background-color: rgb(65, 139, 139);
+}
+
+.btn-cancel {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    margin-right: 15px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+.btn-cancel:hover, .btn-cancel:active {
+    color: #fff;
+    background-color: rgb(65, 139, 139);
+}
+
+.btns {
+    display: flex;
+    padding: 10px;
+}
