@@ -71,27 +71,25 @@
         <input type="password" name="pass" id="" placeholder="Password" required>
 
         <div class="btns">
-          <a href="/" class="btn-cancel">Cancel</a>
+          <a href="profile.html" class="btn-cancel">Cancel</a>
           <input type="submit" class="btn-save" value="Guardar">
         </div>
       </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <% if(typeof alert != "undefined" ) { %>
-      <script>
-        Swal.fire({
-          title: '<%= alertTitle %>',
-          text: '<%= alertMessage %>',
-          icon: '<%= alertIcon %>',
-          showConfirmButton: <%= showConfirmButton %> ,
-          timer: <%= timer %>
-        }).then(() => {
-            window.location = '/ <%= ruta %>'
-          })
-      </script>
-      <% } %>
+    <script>
+      Swal.fire({
+        alert: true,
+        alertTitle: "Error",
+        alertMessage: "Los datos ingresados no son correctos",
+        alertIcon: "error",
+        showConfirmButton: true,
+        timer: false,
+      }).then(() => {
+        window.location = '/ <%= ruta %>'
+      })
+    </script>
   </main>
   <footer>
     <div class="center">
