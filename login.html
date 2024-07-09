@@ -54,16 +54,16 @@
     <main>
         <div class="login-form">
             <h2>Login</h2>
-            <form action="/auth" method="POST">
+            <form action="https://refilms-be.onrender.com/refilms/users" method="POST">
                 <input type="text" name="user" id="user" placeholder="Username">
                 <input type="password" name="pass" id="pass" placeholder="Password">
                 <input type="submit" class="btn-login" value="Login">
             </form>
-            <a href="/register" class="btn-register">Register</a>
+            <a href="/register.html" class="btn-register">Register</a>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script>
+        <!-- <script>
             //logeo incorrecto
             Swal.fire({
                 alert: true,
@@ -82,11 +82,10 @@
                 alertIcon: 'success',
                 showConfirmButton: false,
                 timer: 1500,
-                ruta: ' '
             }).then(() => {
-                window.location = " "
+                window.location = 'https://refilm.netlify.app/login>'
             })
-        </script>
+        </script> -->
     </main>
     <footer>
         <div class="center">
