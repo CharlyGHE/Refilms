@@ -54,7 +54,7 @@
   <main>
     <h2>Registrarse</h2>
     <div class="reg-form">
-      <form id="register-form" action="https://refilms-be.onrender.com/users" method="post">
+      <form id="register-form" action="https://refilms-be.onrender.com/users" method="POST">>
         <label for="firstname">Nombre</label>
         <input type="text" name="firstname" id="firstname" placeholder="Nombre" required>
 
@@ -69,8 +69,11 @@
 
         <label for="password">Contraseña</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
-        <input type="submit" class="btn-save" value="Guardar">
-       <!-- <a href="profile.html" class="btn-cancel">Cancel</a> -->
+        
+        <div class="btns">
+          <a href="profile.html" class="btn-cancel">Cancel</a>
+          <input type="submit" class="btn-save" value="Guardar">
+        </div>
       </form>
     </div>
 
