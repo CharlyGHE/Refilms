@@ -69,17 +69,53 @@
 
         <label for="password">Contraseña</label>
         <input type="password" name="password" id="password" placeholder="Password" required>
-
-        <div class="btns">
-          <a href="profile.html" class="btn-cancel">Cancel</a>
-          <input type="submit" class="btn-save" value="Guardar">
-        </div>
+        <input type="submit" class="btn-save" value="Guardar">
+       <!-- <a href="profile.html" class="btn-cancel">Cancel</a> -->
       </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/registration.js"></script>
-        
+    <script>
+      document.getElementById("register-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const res = await fetch("https://refilms-be.onrender.com/users", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            first_name: e.target.elements.firstname.value,
+            last_name: e.target.elements.lastname.value,
+            email: e.target.elements.email.value,
+            username: e.target.elements.username.value,
+            password: e.target.elements.password.value
+          })
+        });
+
+        if (!res.ok) {
+          Swal.fire({
+            alert: true,
+            title: "Registro",
+            text: "Se produjo un error",
+            icon: 'error',
+            showConfirmButton: true,
+          })
+        } else {
+          Swal.fire({
+            alert: true,
+            title: "Registro",
+            text: "Registro Exitoso!",
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 1500,
+          }).then(() => {
+            window.location = 'https://refilm.netlify.app/login'
+          })
+        }
+      })
+    </script>
+
   </main>
   <footer>
     <div class="center">
